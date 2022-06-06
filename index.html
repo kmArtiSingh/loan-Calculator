@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src ="js/jquery-3.4.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+   <div class="container-fluid banner">
+   <div class="row">
+   <img src="img/banner-containerFluid.png">
+   <div class="bredbrm">
+   <nav aria-label="breadcrumb">
+   <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Personal</a></li>
+    <li class="breadcrumb-item"><a href="#">Tools And Calculators</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Personal Loan Calculator</li>
+   </ol>
+  </nav>    
+   </div>
+   <div class="content">
+   <h1>Personal Loan EMI Calculator</h1>
+   <p>Plan your borrowings and repayments. Calculate your monthly outgo with our personal loan EMI calculator</p>
+   </div> 
+   <div class="small-img">
+   <img src="img/inner-img.webp">    
+   </div>       
+   </div>
+   </div>
+<!--    calculator-->
+   <div class="container-fluid body-container">
+   <div class="container calculator">
+   <div class="row">
+   <div class="col-lg-4 ">
+   <div class="calculator-form">
+   Amount <input type="text" value = "50000" id = "amt" oninput="amtRng.value = amt.value"> <br><br><br>
+   <label>50,000</label><input type="range" min = "50000" max = "4000000" id = "amtRng" oninput="amt.value = amtRng.value"><label>40,00000</label>  
+   </div>   
+   </div>
+       
+   <div class="col-lg-4 ">
+   <div class="calculator-form">
+   For <input type="text" id = "yrs" value = "1" oninput="yrsRng.value = yrs.value"> Years <br><br><br>
+   <label>1 year</label> <input type="range" min = "1" max = "6" id = "yrsRng" oninput="yrs.value = yrsRng.value"><label>6 year</label>   
+   </div>   
+   </div>    
+
+       
+   <div class="col-lg-4 ">
+   <div class="calculator-form">
+   Interest Rate <input type="text" value = "10.75" id = "int" oninput="intRng.value = int.value"> %<br><br><br>
+   <label>10.75 %</label> <input type="range" min = "10.75" max = "21.25" id = "intRng" oninput="int.value = intRng.value"> <label>21.25 %</label>  
+   </div>   
+   </div>
+    <br><br>
+    <br><br><br><br>
+    <div class="col-lg-12">
+    <button class="btn btn-primary btn-md" id = "btn">Calculate</button>
+    </div>
+    <br><br><br><br>   
+    <div class="col-lg-12">
+    <div id="result">
+        </div>
+    </div>       
+
+   </div>    
+   </div>
+   </div>
+</body>
+</html>
